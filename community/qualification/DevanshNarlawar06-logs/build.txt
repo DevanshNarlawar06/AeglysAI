@@ -1,0 +1,35 @@
+$ dotnet --version
+8.0.427
+$ dotnet restore
+  Determining projects to restore...
+  Restored <repo>/deployment\docker\AeglysAI.DevTools\AeglysAI.DevTools.csproj (in 88 ms).
+  Restored <repo>/src\AeglysAI.Domain\AeglysAI.Domain.csproj (in 88 ms).
+  Restored <repo>/benchmarks\AeglysAI.Experiments\AeglysAI.Experiments.csproj (in 96 ms).
+  Restored <repo>/src\AeglysAI.Infrastructure\AeglysAI.Infrastructure.csproj (in 96 ms).
+  Restored <repo>/src\AeglysAI.Application\AeglysAI.Application.csproj (in 96 ms).
+  Restored <repo>/src\AeglysAI.Api\AeglysAI.Api.csproj (in 7.57 sec).
+  Restored <repo>/tests\AeglysAI.Application.Tests\AeglysAI.Application.Tests.csproj (in 26.91 sec).
+  Restored <repo>/tests\AeglysAI.Experiments.Tests\AeglysAI.Experiments.Tests.csproj (in 26.91 sec).
+  Restored <repo>/tests\AeglysAI.Domain.Tests\AeglysAI.Domain.Tests.csproj (in 26.91 sec).
+  Restored <repo>/tests\AeglysAI.ArchitectureTests\AeglysAI.ArchitectureTests.csproj (in 26.91 sec).
+  Restored <repo>/tests\AeglysAI.IntegrationTests\AeglysAI.IntegrationTests.csproj (in 26.91 sec).
+exit=0
+$ dotnet build --no-restore
+  AeglysAI.Domain -> <repo>/src\AeglysAI.Domain\bin\Debug\net8.0\AeglysAI.Domain.dll
+  AeglysAI.ArchitectureTests -> <repo>/tests\AeglysAI.ArchitectureTests\bin\Debug\net8.0\AeglysAI.ArchitectureTests.dll
+  AeglysAI.DevTools -> <repo>/deployment\docker\AeglysAI.DevTools\bin\Debug\net8.0\AeglysAI.DevTools.dll
+  AeglysAI.Application -> <repo>/src\AeglysAI.Application\bin\Debug\net8.0\AeglysAI.Application.dll
+  AeglysAI.Domain.Tests -> <repo>/tests\AeglysAI.Domain.Tests\bin\Debug\net8.0\AeglysAI.Domain.Tests.dll
+  AeglysAI.Infrastructure -> <repo>/src\AeglysAI.Infrastructure\bin\Debug\net8.0\AeglysAI.Infrastructure.dll
+  AeglysAI.Application.Tests -> <repo>/tests\AeglysAI.Application.Tests\bin\Debug\net8.0\AeglysAI.Application.Tests.dll
+  AeglysAI.Experiments -> <repo>/benchmarks\AeglysAI.Experiments\bin\Debug\net8.0\AeglysAI.Experiments.dll
+  AeglysAI.Experiments.Tests -> <repo>/tests\AeglysAI.Experiments.Tests\bin\Debug\net8.0\AeglysAI.Experiments.Tests.dll
+  AeglysAI.Api -> <repo>/src\AeglysAI.Api\bin\Debug\net8.0\AeglysAI.Api.dll
+  AeglysAI.IntegrationTests -> <repo>/tests\AeglysAI.IntegrationTests\bin\Debug\net8.0\AeglysAI.IntegrationTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:10.53
+exit=0
